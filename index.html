@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+  <h1>Welcome to Interactive Web Page</h1>
+
+  <!-- Part 1: Event Handling Demo -->
+  <button id="alertButton">Click me for alert</button>
+
+  <!-- Part 2: Interactive Elements -->
+  <h2>Light/Dark Mode Toggle</h2>
+  <button id="modeToggle">Switch to Dark Mode</button>
+
+  <h2>FAQ Section (Collapsible)</h2>
+  <div id="faq">What is JavaScript?
+    <div id="faq-content" class="hidden">
+      JavaScript is a programming language for web pages.
+    </div>
+  </div>
+
+  <!-- Part 3: Form with Validation -->
+  <h2>Signup Form</h2>
+  <form id="signupForm" novalidate>
+    <label>Name: <input type="text" id="name" name="name" /></label><br /><br />
+    <label>Email: <input type="email" id="email" name="email" /></label><br /><br />
+    <label>Password: <input type="password" id="password" name="password" /></label><br /><br />
+    <button type="submit">Submit</button>
+  </form>
+  <div id="formMessage"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
